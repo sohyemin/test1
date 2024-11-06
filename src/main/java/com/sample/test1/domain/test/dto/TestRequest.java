@@ -4,8 +4,9 @@ import com.sample.test1.domain.test.entity.Test;
 import lombok.Data;
 
 @Data
-public class TestCreateRequest {
+public class TestRequest {
 
+    private Long id;
     private String name;
     private String code;
 

@@ -24,4 +24,9 @@ public class Test {
         this.code = code;
     }
 
+    public void update(String name, String code){
+        this.name = name;
+        this.code = code;
+    }
+
 }
