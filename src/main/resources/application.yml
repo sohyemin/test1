@@ -3,10 +3,10 @@ server:
 
 spring:
   profiles:
-    active: dev  # ???? ????? ???? ?, ??? dev? ?????? ?!
+    active: dev
   mvc:
     pathmatch:
-      matching-strategy: ant_path_matcher  # swagger2 ?? ?? ???
+      matching-strategy: ant_path_matcher
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

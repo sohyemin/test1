@@ -19,6 +19,7 @@ public class Test {
     @Column(nullable = false)
     private String code;
 
+    @Builder
     public Test(String name, String code) {
         this.name = name;
         this.code = code;

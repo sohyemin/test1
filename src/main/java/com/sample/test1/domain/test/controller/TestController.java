@@ -21,6 +21,11 @@ public class TestController {
         return testService.testList();
     }
 
+    @GetMapping("/test/{id}")
+    public Test findTestById(@PathVariable("id") Long id){
+        return testService.readeById(id);
+    }
+
     @PostMapping("/test")
     public void createTest(@RequestBody TestRequest test){
         testService.createTest(test);

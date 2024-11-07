@@ -11,6 +11,9 @@ public class TestRequest {
     private String code;
 
     public Test toEntity() {
-        return new Test(name, code);
+        return Test.builder()
+                .name(name)
+                .code(code)
+                .build();
     }
 }
